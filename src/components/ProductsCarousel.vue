@@ -163,16 +163,10 @@
 </template>
 
 <script>
-import { Swiper, SwiperSlide } from "vue-awesome-swiper";
-import "swiper/css/swiper.css";
+
 
 export default {
-  name: "swiper-example-multiple-slides-per-biew",
-  title: "Multiple slides per view",
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
+  
   data() {
     return {
       swiperOption: {

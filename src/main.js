@@ -5,7 +5,7 @@ import Tab from 'vue-swipe-tab';
 import Antd from 'ant-design-vue';
 import './styles/antd.css';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
-import 'swiper/css/swiper.css';
+import './styles/swiper.css';
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 import '@fortawesome/fontawesome-free/css/all.css';
 import '@fortawesome/fontawesome-free/js/all.js';

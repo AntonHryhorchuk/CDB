@@ -3,7 +3,7 @@ import App from './App.vue'
 import './styles/common.scss'
 import Tab from 'vue-swipe-tab';
 import Antd from 'ant-design-vue';
-import 'ant-design-vue/dist/antd.css';
+import './styles/antd.css';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css';

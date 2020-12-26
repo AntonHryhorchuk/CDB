@@ -151,7 +151,11 @@ export default {};
   letter-spacing: 3px;
   max-width: 220px;
   margin-bottom: 40px;
+  
 }
+ .ant-tabs-tab:hover{
+    color:#1C1C1B !important;
+  }
 .about-us__wrapper-description-text {
   padding: 10px 140px 10px 0px;
   color: #000000;

@@ -164,9 +164,10 @@
 
 <script>
 
+import "../styles/swiper.css";
 
 export default {
-  
+
   data() {
     return {
       swiperOption: {

@@ -1,0 +1,46 @@
+.accordion {
+    width: 100%;
+    max-width: 570px;
+    border-bottom: 2px solid #eaedde;
+    margin-bottom: 50px;
+    &__item {
+      position: relative;
+      
+      &-icon {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        z-index: 99;      
+      }
+      &-head {
+        position: relative;
+        background-color: #f7f8f3;
+        cursor: pointer;
+        padding: 10px 40px;
+        border-top: 2px solid #eaedde;
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        color: #6e774a;
+        letter-spacing: 5px;
+        &:hover{
+          color:  #98a079;
+          transition: all .3s ease;
+        }
+      }
+      &-text{
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        color:#000000;
+      }
+      &-body {
+        display: none;
+        padding: 20px 40px;
+      }
+    }
+  }
+  
+  .accordion__item-head.active + .accordion__item-body {
+    display: block !important;
+  }

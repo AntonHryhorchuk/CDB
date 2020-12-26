@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 100px;
+    &__title {
+      color: #1c1c1b;
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-size: 30px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 60px;
+    }
+  }

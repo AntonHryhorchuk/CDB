@@ -1,0 +1,31 @@
+.trust-icons {
+    max-width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F8F3;
+  }
+  .trust-icons__holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+    min-width: 692px;
+    min-height: 200px;
+    background-image: url("../assets/HolderTrustIcons.png");
+    background-repeat: no-repeat;
+  }
+  .trust-icons__holder-title {
+    color: #1c1c1b;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+  }
+  .trust-icons__holder-icon {
+    max-width: 450px;
+  }

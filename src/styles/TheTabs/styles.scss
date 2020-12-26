@@ -1,0 +1,49 @@
+.about-us__wrapper {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 30px;
+  }
+  .about-us__wrapper-description-title {
+    color: #000000;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    max-width: 220px;
+    margin-bottom: 40px;
+    
+  }
+   .ant-tabs-tab:hover{
+      color:#1C1C1B !important;
+    }
+  .about-us__wrapper-description-text {
+    padding: 10px 140px 10px 0px;
+    color: #000000;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .about-us__wrapper-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-us__wrapper-images-img {
+    width: 300px;
+    height: 0;
+    padding-bottom: 66.67%;
+    border: 2px solid white;
+    position: relative;
+  }
+  .about-us__wrapper-images-img-img {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+  }

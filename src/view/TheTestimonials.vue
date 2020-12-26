@@ -1,23 +1,7 @@
 <template>
   <div class="container">
-    <swiper class="swiper" :options="swiperOption">
-      <swiper-slide v-for="item in items" :key="item.text">
-        <div class="card">
-          <ul class="card__rating">
-            <li class="card__rating-star"><i class="fas fa-star"></i></li>
-            <li class="card__rating-star"><i class="fas fa-star"></i></li>
-            <li class="card__rating-star"><i class="fas fa-star"></i></li>
-            <li class="card__rating-star"><i class="fas fa-star"></i></li>
-            <li class="card__rating-star"><i class="fas fa-star"></i></li>
-          </ul>
-          <p class="card__text">{{ item.text }}</p>
-          <h3 class="card__autor">{{ item.autor }}</h3>
-          <div class="card__wrapper-bg-text">CBD every day</div>
-        </div>
-      </swiper-slide>
- 
-    </swiper>
-         <div class="btn-holder">
+    <testi-card />
+    <div class="btn-holder">
         <div class="swiper-button-prev" slot="button-prev">
           <svg
             width="41"
@@ -71,28 +55,11 @@
 </template>
 
 <script>
-import "../styles/swiper.css";
+import TestiCard from "../components/TestiCard.vue"
 export default {
+  components:{TestiCard},
   data() {
-    return {
-      items: [
-        {
-          text:
-            "I have tried another product after using this one successfully, and I am Back for good! The flavour, the lightness of the oil and the health benefits I have gotten with this oil are amazing!",
-          autor: "Mark J.",
-        },
-        {
-          text:
-            "The first half of life consists of the capacity to enjoy without the chance, the last half consists of the chance without the capacity",
-          autor: "Mark Twain",
-        },
-        { text: "While we are postponing, life speeds by.", autor: "Seneca" },
-        {
-          text: "If you do not think about the future, you cannot have one.",
-          autor: "Galsworthy",
-        },
-      ],
-
+    return {     
       swiperOption: {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -107,115 +74,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container{
-  position: relative;
-  margin-bottom: 40px;
-}
-.card {
-  position: relative;
-  width: 100vw;
-  min-height: 800px;
-  // background-image: url("../assets/testi.png");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/testi.png");
-  background-position: center;
-  background-position-x: left;
-  background-position-y: 76%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  // filter: brightness(60%);
-  &__rating {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding-left: 0 !important;
-    margin-bottom: 30px !important;
-    &-star:not(:last-child) {
-      margin-right: 5px;
-    }
-  }
-  &__text {
-    max-width: 700px;
-    color: #ffffff;
-    font-family: "Oswald", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    letter-spacing: 4px;
-  }
-  &__autor {
-    position: relative;
-    color: #ffffff;
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    &::before {
-      position: absolute;
-      content: " ";
-      display: block;
-      width: 40px;
-      border-top: 2px solid #ffffff;
-      top: 50%;
-      left: -100%;
-    }
-  }
-  &__wrapper-bg-text {
-    position: absolute;
-    left: -20px;
-    bottom: 100px;
-    font-family: "Oswald", sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #f7f8f3;
-    opacity: 0.8;
-    transform: rotate(90deg);
-  }
-}
-.fa-star {
-  color: #aab384;
-}
-img {
-  fill: #ffffff;
-}
-.btn-holder {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
-  z-index: 99;
-}
-.swiper-button-prev{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px !important;
-  height: 80px !important;
-  border: 1px solid #ffffff;
-}
-.swiper-button-next{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px !important;
-  height: 80px !important;
-  border: 1px solid #ffffff;
-} 
-.swiper-button-next:focus{
-     border:1px solid #ffffff;
-    outline: none ;
-  }
-  .swiper-button-prev:focus{
-     border: 1px solid #ffffff;
-    outline: none ;
-  }
+@import "../styles/TheTestimonials/styles.scss";
 </style>

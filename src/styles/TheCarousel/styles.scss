@@ -1,0 +1,102 @@
+.swiper{
+    margin-bottom: 30px;
+  }
+  p {
+    margin-bottom: 0 !important;
+  }
+  .swiper-slide {
+    min-width: 450px !important;
+  }
+  path{
+    border:none;
+  }
+  .fa-star {
+    color: #6e774a;
+  }
+  
+  .swiper-slide {
+    min-height: 300px;
+  }
+  .card {
+    width: 100%;
+    max-width: 450px;
+    min-height: 467px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 30px;
+    border: 1px solid #e3e3e1;
+    &__rating {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      padding-left: 0 !important;
+      margin-bottom: 16px !important;
+      &-star:not(:last-child) {
+        margin-right: 3px;
+      }
+    }
+    &__title {
+      color: #1c1c1b;
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+    &__image {
+      height: 256px;
+      margin-bottom: 20px;
+    }
+    &__footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+  
+      &-price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 320px;
+        min-height: 50px;
+        background-color: #f1f1f1;
+        font-family: "Oswald", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #1c1c1b;
+      }
+      &-btn {
+        position: relative;
+        display: flex;
+        background-color: #6e774a;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 20px;
+        min-width: 130px;
+        min-height: 50px;
+        color: #ffffff;
+        font-family: "Oswald", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+      &-btn::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 50px;
+        border-top: 2px solid #ffffff;
+        top: 50%;
+        left: 50%;
+      }
+    }
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+}

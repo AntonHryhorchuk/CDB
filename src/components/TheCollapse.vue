@@ -1,6 +1,4 @@
 <template>
-  <div class="container">
-    <h2 class="container__title">Frequently asked questions</h2>
     <div class="accordion" id="accordion">
       <div class="accordion__item">
         <img class="accordion__item-icon" src="../assets/plus.svg" />
@@ -59,7 +57,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -69,7 +66,6 @@ export default {
   },
   methods: {
     accordion: function(event) {
-      //Раскомментировать, если нужно, чтобы закрывались остальные пункты при открытии текущего
       var matches = document.querySelectorAll(".accordion__item-head");
       for (var i = 0; i < matches.length; i++) {
         matches[i].classList.remove("active");
@@ -80,68 +76,7 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 100px;
-  &__title {
-    color: #1c1c1b;
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 60px;
-  }
-}
-.accordion {
-  width: 100%;
-  max-width: 570px;
-  border-bottom: 2px solid #eaedde;
-  margin-bottom: 50px;
-  &__item {
-    position: relative;
-    
-    &-icon {
-      position: absolute;
-      top: 15px;
-      left: 0;
-      z-index: 99;      
-    }
-    &-head {
-      position: relative;
-      background-color: #f7f8f3;
-      cursor: pointer;
-      padding: 10px 40px;
-      border-top: 2px solid #eaedde;
-      font-family: "Oswald", sans-serif;
-      font-weight: 300;
-      font-size: 18px;
-      color: #6e774a;
-      letter-spacing: 5px;
-      &:hover{
-        color:  #98a079;
-        transition: all .3s ease;
-      }
-    }
-    &-text{
-      font-family: "Oswald", sans-serif;
-      font-weight: 300;
-      font-size: 18px;
-      color:#000000;
-    }
-    &-body {
-      display: none;
-      padding: 20px 40px;
-    }
-  }
-}
 
-.accordion__item-head.active + .accordion__item-body {
-  display: block !important;
-}
+<style lang='scss' scoped>
+@import "../styles/TheCollapse/styles.scss";
 </style>

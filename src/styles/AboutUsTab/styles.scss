@@ -1,0 +1,10 @@
+.about-us {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f8f3;
+    &__tabs {
+      width: 70%;
+    }
+  }

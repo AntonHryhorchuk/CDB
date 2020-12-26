@@ -1,0 +1,39 @@
+.container{
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .btn-holder {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    z-index: 99;
+  }
+  .swiper-button-prev{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px !important;
+    height: 80px !important;
+    border: 1px solid #ffffff;
+  }
+  .swiper-button-next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px !important;
+    height: 80px !important;
+    border: 1px solid #ffffff;
+  } 
+  .swiper-button-next:focus{
+       border:1px solid #ffffff;
+      outline: none ;
+    }
+    .swiper-button-prev:focus{
+       border: 1px solid #ffffff;
+      outline: none ;
+    }

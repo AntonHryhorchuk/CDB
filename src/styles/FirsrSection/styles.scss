@@ -1,0 +1,108 @@
+.first-section {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/ImgBg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    &__shadow {
+      position: absolute;
+      width: 100%;
+      height: 277px;
+      background-image: url("../assets/ShadowBg.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      top: 0;
+      left: 0;    
+    }
+    &__wrapper-bg-text {
+      position: absolute;
+      left: -30px;
+      bottom: 200px;
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      text-transform: uppercase;
+      color: #ffffff;
+      opacity: 0.8;
+      transform: rotate(-90deg);
+    }
+    &__wrapper-bg-text::before {
+      content: "";
+      display: block;
+      width: 140px;
+      border-top: 2px solid #ffffff;
+      position: absolute;
+      left: -170px;
+      bottom: 15px;
+    }
+    &__wrapper {
+      width: 100%;
+      max-width: 768px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      flex-direction: column;
+    }
+    &__wrapper-title {
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-size: 45px;
+      text-transform: uppercase;
+      color: #ffffff;
+      letter-spacing: 5.2px;
+    }
+    &__wrapper-subtitle {
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      color: #ffffff;
+      margin-top: 30px;
+      letter-spacing: 3px;
+      margin-bottom: 25px;
+    }
+    &__wrapper-btn {
+      position: relative;
+      width: 200px;
+      height: 40px;
+      border: 1px solid #ffffff;
+      background-color: inherit;
+      color: #ffffff;
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      text-transform: uppercase;
+      text-align: start;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    &__wrapper-btn::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      border-top: 2px solid #ffffff;
+      top: 50%;
+      left: 75%;
+    }
+    &__wrapper-link-icon {
+      margin-left: 20px;
+    }
+    &__wrapper-link {
+      color: #ffffff;
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+    &__scroll-icon {
+      position: absolute;
+      left: 50%;
+      bottom: 3%;
+      transform: translateX(-50%);
+    }
+  }
+  

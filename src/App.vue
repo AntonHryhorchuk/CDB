@@ -15,9 +15,9 @@
 import NavBar from "./components/NavBar.vue";
 import FirstSection from "./view/FirstSection.vue";
 import TrustSection from "./view/TrustSection.vue";
-import AboutUs from "./components/AboutUsTab.vue";
-import FuturedProducts from "./components/ProductsCarousel";
-import FrAsQe from "./components/FrequentlyAQ";
+import AboutUs from "./view/AboutUsTab.vue";
+import FuturedProducts from "./view/ProductsCarousel";
+import FrAsQe from "./view/FrequentlyAQ";
 import TheTestimonials from "./view/TheTestimonials";
 import TheFooter from "./view/TheFooter";
 

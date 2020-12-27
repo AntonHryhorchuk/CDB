@@ -78,10 +78,10 @@
 
     <the-sidebar>
       <ul class="sidebar-panel-nav">
-       <li><a href="#home">Home</a></li>
-       <li><a href="#products">Products</a></li>
-       <li><a href="#faqs">FAQs</a></li>
-       <li><a href="#contact">Contuct Us</a></li>
+       <li><a href="#home" v-scroll-to="{ el: '#home' }">Home</a></li>
+       <li><a href="#products" v-scroll-to="{ el: '#products' }">Products</a></li>
+       <li><a href="#faqs" v-scroll-to="{ el: '#faq' }">FAQs</a></li>
+       <li><a href="#contact" v-scroll-to="{ el: '#contacts' }">Contuct Us</a></li>
        <li><a href="#login">Login</a></li>
        <li><a href="#search">Search</a></li>
        <li><a href="#card">Card</a></li>

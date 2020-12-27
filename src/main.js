@@ -9,7 +9,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper';
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 import '@fortawesome/fontawesome-free/css/all.css';
 import '@fortawesome/fontawesome-free/js/all.js';
-// import './registerServiceWorker'
+import { Slide } from 'vue-burger-menu'
 import VueScrollTo from 'vue-scrollto'
 
 Vue.use(VueScrollTo);
@@ -17,6 +17,7 @@ Vue.use(VueAwesomeSwiper);
 Vue.use(Tab);
 Vue.use(Antd);
 Vue.config.productionTip = false
+Vue.use(Slide);
 
 Vue.directive('scroll', {
   inserted: function(el, binding) {

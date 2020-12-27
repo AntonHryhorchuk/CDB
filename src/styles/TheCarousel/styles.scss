@@ -46,6 +46,7 @@
       font-size: 15px;
       text-transform: uppercase;
       margin-bottom: 25px;
+      user-select: none;
     }
     &__image {
       height: 256px;
@@ -69,6 +70,7 @@
         font-size: 18px;
         text-transform: uppercase;
         color: #1c1c1b;
+        user-select: none;
       }
       &-btn {
         position: relative;
@@ -84,6 +86,9 @@
         font-weight: 400;
         font-size: 20px;
         text-transform: uppercase;
+        &:hover{
+          filter: brightness(120%);
+        }
       }
       &-btn::before {
         position: absolute;

@@ -21,6 +21,7 @@
       flex-direction: row;
       padding-left: 0 !important;
       margin-bottom: 30px !important;
+      user-select: none;
       &-star:not(:last-child) {
         margin-right: 5px;
       }
@@ -32,6 +33,7 @@
       font-weight: 300;
       font-size: 16px;
       letter-spacing: 4px;
+      user-select: none;
     }
     &__autor {
       position: relative;
@@ -41,6 +43,7 @@
       font-size: 20px;
       text-transform: uppercase;
       letter-spacing: 3px;
+      user-select: none;
       &::before {
         position: absolute;
         content: " ";
@@ -62,6 +65,7 @@
         color: #f7f8f3;
         opacity: 0.8;
         transform: rotate(90deg);
+        user-select: none;
       }
     }  
     .fa-star {

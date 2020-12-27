@@ -21,6 +21,7 @@
     letter-spacing: 3px;
     max-width: 220px;
     margin-bottom: 40px;
+    user-select: none;
     
   }
    .ant-tabs-tab:hover{
@@ -33,6 +34,7 @@
     font-weight: 300;
     font-size: 16px;
     margin-bottom: 10px;
+    user-select: none;
   }
   .about-us__wrapper-images {
     display: flex;

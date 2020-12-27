@@ -1,5 +1,5 @@
 <template>
-  <section class="first-section">
+  <section class="first-section" id="home">
     <div class="first-section__shadow"></div>
 
     <div class="first-section__wrapper">
@@ -8,8 +8,8 @@
       <h2 class="first-section__wrapper-subtitle">
         Choose Wisely. Choose CBD.
       </h2>
-      <button class="first-section__wrapper-btn">Start Shopping</button>
-      <a class="first-section__wrapper-link" href="">
+      <a class="first-section__wrapper-btn" v-scroll-to="{ el: '#products' }">Start Shopping</a>
+      <a class="first-section__wrapper-link" href="" v-scroll-to="{ el: '#products' }">
         See all Products
         <svg
           width="21"
@@ -37,7 +37,7 @@
     </div>
     <div class="first-section__wrapper-bg-text">CBD Potion health</div>
     <div class="first-section__scroll-icon">
-      <a>
+      <a v-scroll-to="{ el: '#trust' }">
         <svg
           width="31"
           height="17"

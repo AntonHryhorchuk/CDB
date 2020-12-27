@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="faq">
     <h2 class="container__title">Frequently asked questions</h2>
     <the-collapse />
   </div>

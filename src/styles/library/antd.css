@@ -147,7 +147,7 @@ sup {
   top: -0.5em;
 }
 a {
-  color:#1C1C1B;
+  color:#ffffff;
   text-decoration: none;
   background-color: transparent;
   outline: none;
@@ -6996,7 +6996,7 @@ span.ant-radio + * {
 }
 .ant-card-actions > li > span a:not(.ant-btn):hover,
 .ant-card-actions > li > span > .anticon:hover {
-  color:#1C1C1B;
+  color:#ffffff;
 }
 .ant-card-actions > li > span > .anticon {
   font-size: 16px;

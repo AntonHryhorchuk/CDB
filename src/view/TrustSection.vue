@@ -1,5 +1,5 @@
 <template>
-  <section class="trust-icons">
+  <section class="trust-icons" id="trust">
     <div class="trust-icons__holder">
       <h3 class="trust-icons__holder-title">We are what we are</h3>
       <img src="../assets/Logos.svg" alt="">

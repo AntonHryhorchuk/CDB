@@ -20,6 +20,9 @@
     width: 100px !important;
     height: 80px !important;
     border: 1px solid #ffffff;
+    &:hover{
+      filter: brightness(60%);
+    }
   }
   .swiper-button-next{
     display: flex;
@@ -28,6 +31,9 @@
     width: 100px !important;
     height: 80px !important;
     border: 1px solid #ffffff;
+    &:hover{
+      filter: brightness(60%);
+    }
   } 
   .swiper-button-next:focus{
        border:1px solid #ffffff;

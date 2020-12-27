@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="contacts">
     <div class="footer">
       <h1 class="footer__logo">CBD</h1>
 
@@ -25,9 +25,9 @@
         </div>
       </div>
       <h2 class="footer__subscribe">Subscribe to Newsletter</h2>
-      <form action="" method="post">
-        <input type="email" />
-        <div class="button" type="submit"><img src="../assets/ArrowSubm.svg"></div>
+      <form action="info" @submit="info">
+        <input type="email" v-model=" message" placeholder="Email"/>
+        <div class="button" type="submit" @click="info"><img src="../assets/ArrowSubm.svg"></div>
       </form>
       <p class="footer__text">© 2018. CbD health.</p>
     </div>
@@ -35,7 +35,19 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data(){
+    return{
+      message: "",
+    }
+  },
+  methods: {
+    info() {
+      this.message!="Email" ? this.$message.info(this.message) : this.$message.info("please enter correct Email");       
+    },    
+  },
+  
+};
 </script>
 
 <style lang="scss" scoped>
@@ -158,6 +170,11 @@ form {
   margin-bottom: 60px;
 }
 input {
+  font-family: "Oswald", sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+       color: #6e774a;
+      letter-spacing: 2px;
   outline: none;
   width: 200px;
   height: 40px;

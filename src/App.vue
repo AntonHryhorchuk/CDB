@@ -8,7 +8,8 @@
     <fr-as-qe />
     <the-testimonials />
     <the-footer />
-  </div>
+    
+    </div>
 </template>
 
 <script>
@@ -23,8 +24,12 @@ import TheFooter from "./view/TheFooter";
 
 
 
+
+
+
+
 export default {
-  components: { NavBar, FirstSection, TrustSection, AboutUs, FuturedProducts, FrAsQe, TheTestimonials, TheFooter },
+  components: { NavBar, FirstSection, TrustSection, AboutUs, FuturedProducts, FrAsQe, TheTestimonials, TheFooter,  },
   name: "App",
 };
 </script>

@@ -11,6 +11,15 @@ a{
     text-decoration: none;
     color: #FFFFFF;
 }
+a:focus{
+    color: #FFFFFF;
+}
+a:hover{
+    color: #ebf374 !important;
+    border-color:#ebf374 !important ;   
+    fill: #ebf374 !important; 
+}
+
 html{
     background-color: #F7F8F3;
 }

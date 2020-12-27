@@ -13,7 +13,7 @@
           <div class="card__image"><img src="../assets/bottle1.png" /></div>
           <div class="card__footer">
             <div class="card__footer-price"><p>$49.99 USD</p></div>
-            <div class="card__footer-btn"><p>Shop</p></div>
+            <a class="card__footer-btn"><p>Shop</p></a>
           </div>
         </div></swiper-slide
       >
@@ -30,7 +30,7 @@
           <div class="card__image"><img src="../assets/bottle2.png" /></div>
           <div class="card__footer">
             <div class="card__footer-price"><p>$49.99 USD</p></div>
-            <div class="card__footer-btn"><p>Shop</p></div>
+            <a class="card__footer-btn"><p>Shop</p></a>
           </div>
         </div></swiper-slide
       >
@@ -47,7 +47,7 @@
           <div class="card__image"><img src="../assets/bottle3.png" /></div>
           <div class="card__footer">
             <div class="card__footer-price"><p>$79.99 USD</p></div>
-            <div class="card__footer-btn"><p>Shop</p></div>
+            <a class="card__footer-btn"><p>Shop</p></a>
           </div>
         </div></swiper-slide
       >
@@ -64,7 +64,7 @@
           <div class="card__image"><img src="../assets/bottle1.png" /></div>
           <div class="card__footer">
             <div class="card__footer-price"><p>$49.99 USD</p></div>
-            <div class="card__footer-btn"><p>Shop</p></div>
+            <a class="card__footer-btn"><p>Shop</p></a>
           </div>
         </div></swiper-slide
       >
@@ -81,7 +81,7 @@
           <div class="card__image"><img src="../assets/bottle1.png" /></div>
           <div class="card__footer">
             <div class="card__footer-price"><p>$49.99 USD</p></div>
-            <div class="card__footer-btn"><p>Shop</p></div>
+            <a class="card__footer-btn"><p>Shop</p></a>
           </div>
         </div></swiper-slide
       >
@@ -98,7 +98,7 @@
           <div class="card__image"><img src="../assets/bottle1.png" /></div>
           <div class="card__footer">
             <div class="card__footer-price"><p>$49.99 USD</p></div>
-            <div class="card__footer-btn"><p>Shop</p></div>
+            <a class="card__footer-btn"><p>Shop</p></a>
           </div>
         </div></swiper-slide
       >      

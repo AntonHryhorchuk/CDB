@@ -4,21 +4,21 @@
       <div class="nav-list">
         <ul class="nav__list-list">
           <li class="nav__list-item">
-            <p v-bind:class="{ active: windowTop }">Home</p>
+            <a v-bind:class="{ active: windowTop }" v-scroll-to="{ el: '#home' }">Home</a>
           </li>
           <li class="nav__list-item">
-            <p v-bind:class="{ active: windowTop }">Products</p>
+            <a v-bind:class="{ active: windowTop }" v-scroll-to="{ el: '#products' }">Products</a>
           </li>
           <li class="nav__list-item">
-            <p v-bind:class="{ active: windowTop }">FAQs</p>
+            <a v-bind:class="{ active: windowTop }" v-scroll-to="{ el: '#faq' }">FAQs</a>
           </li>
           <li class="nav__list-item">
-            <p v-bind:class="{ active: windowTop }">Contact Us</p>
+            <a v-bind:class="{ active: windowTop }" v-scroll-to="{ el: '#contacts' }">Contact Us</a>
           </li>
         </ul>
       </div>
       <div class="nav__logo">
-        <p v-bind:class="{ active: windowTop }">CBD</p>
+        <a v-scroll-to="{ el: '#home' }" v-bind:class="{ active: windowTop }">CBD</a>
       </div>
       <div class="nav__registration">
         <ul class="nav__registration-list">
@@ -26,14 +26,17 @@
             class="nav__registration-item"
             v-bind:class="{ borderdark: windowTop }"
           >
-            <p v-bind:class="{ active: windowTop }">login</p>
+
+           
+            <login-modal  />
           </li>
           <li
             class="nav__registration-item"
             v-bind:class="{ borderdark: windowTop }"
           >
-            <p v-bind:class="{ active: windowTop }">
+            <a v-bind:class="{ active: windowTop }">
               <svg
+               class="nav__list-item"
                 v-bind:class="{ active: windowTop }"
                 width="21"
                 height="21"
@@ -58,34 +61,66 @@
                 </svg>
               </svg>
               Search
-            </p>
+            </a>
+            
           </li>
           <li
             class="nav__registration-item"
             v-bind:class="{ borderdark: windowTop }"
           >
-            <p v-bind:class="{ active: windowTop }">Cart (0)</p>
+            <a v-bind:class="{ active: windowTop }">Cart (0)</a>
           </li>
         </ul>
       </div>
+      <the-burger v-show="itemSize"></the-burger>
     </nav>
-  </div>
+    
+
+    <the-sidebar>
+      <ul class="sidebar-panel-nav">
+       <li><a href="#home">Home</a></li>
+       <li><a href="#products">Products</a></li>
+       <li><a href="#faqs">FAQs</a></li>
+       <li><a href="#contact">Contuct Us</a></li>
+       <li><a href="#login">Login</a></li>
+       <li><a href="#search">Search</a></li>
+       <li><a href="#card">Card</a></li>
+
+     </ul>
+    </the-sidebar>  </div>
 </template>
 
 <script>
+import LoginModal from './LoginModal.vue';
+import TheBurger from './Menu/TheBurger.vue';
+
+
+import TheSidebar from './Menu/TheSidebar.vue';
 export default {
+ 
   data() {
     return {
-      windowTop: 0,
+    itemSize: false,
+    
+    windowTop: 0,
     };
   },
+  components:{LoginModal, TheBurger, TheSidebar,},
   mounted() {
     window.addEventListener("scroll", this.onScroll);
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.onScroll);
+    window.removeEventListener('resize', this.onResize);
   },
+  created() {
+  window.addEventListener('resize', this.onResize);
+  this.onResize();
+},
   methods: {
+    onResize() {
+    this.itemSize = document.documentElement.clientWidth > 680 ? false : true;
+  },
     onScroll(e) {
       this.windowTop = e.target.documentElement.scrollTop;
      

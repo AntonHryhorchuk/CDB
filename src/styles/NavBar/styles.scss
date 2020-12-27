@@ -1,18 +1,13 @@
 svg {
-  fill: #ffffff;
+  margin-right: 5px !important;
 }
-.active {
-  color: #1c1c1b;
-  fill: #1c1c1b;
-}
+
 .borderdarkpanel {
-  border-bottom: 1px solid #1c1c1b !important;
-  opacity: 1 !important;
-  background-color: #ffffff;
+
+  opacity: .7 !important;
+  background-color: #484252;
 }
-.borderdark {
-  border-left: 1px solid #1c1c1b !important;
-}
+
 .nav {
   width: 100%;
   display: flex;
@@ -23,7 +18,7 @@ svg {
   top: 0;
   left: 0;
   border-bottom: 1px solid #ffffff;
-  opacity: 0.4;
+  opacity: 0.8;
   z-index: 99;
   color: #ffffff;
   border-color: #ffffff;
@@ -39,6 +34,10 @@ svg {
     font-weight: 400;
     font-size: 16px;
     text-transform: uppercase;
+    fill: #ffffff;
+    &:hover{
+      fill: #ebf374 !important; 
+    }
   }
   &__list-item:last-child {
     margin-right: 0;
@@ -80,5 +79,22 @@ svg {
   &__registration-item-icon {
     margin-right: 7px;
     transform: translateY(3px);
+  }
+}
+.burger-button{
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  .nav__registration-list{
+    display: none;
+  }
+  .nav__list-list{
+    display: none;
+  }
+  .burger-button{
+    display: block;
+  }
+  .nav{
+    border-bottom: none;
   }
 }

@@ -3,15 +3,16 @@ import App from './App.vue'
 import './styles/common.scss'
 import Tab from 'vue-swipe-tab';
 import Antd from 'ant-design-vue';
-import './styles/library/antd.css';
+
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 // import './styles/swiper.css';
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 import '@fortawesome/fontawesome-free/css/all.css';
 import '@fortawesome/fontawesome-free/js/all.js';
 // import './registerServiceWorker'
+import VueScrollTo from 'vue-scrollto'
 
-
+Vue.use(VueScrollTo);
 Vue.use(VueAwesomeSwiper);
 Vue.use(Tab);
 Vue.use(Antd);

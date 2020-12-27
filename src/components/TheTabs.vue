@@ -96,13 +96,13 @@
               </p>
             </div>
             <div class="about-us__wrapper-images">
-              <div class="about-us__wrapper-images-img">
+              <div class="about-us__wrapper-images-img top">
                 <img
                   class="about-us__wrapper-images-img-img"
                   src="../assets/aboutImg.png"
                 />
               </div>
-              <div class="about-us__wrapper-images-img">
+              <div class="about-us__wrapper-images-img bottom">
                 <img
                   class="about-us__wrapper-images-img-img"
                   src="../assets/aboutImg2.png"
@@ -116,6 +116,7 @@
 </template>
 
 <script>
+import '../styles/library/antd.css';
 export default {
     
 }

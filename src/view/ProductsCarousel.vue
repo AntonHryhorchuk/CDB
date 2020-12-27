@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="products">
     <h2 class="container__title">CBD Featured Products</h2>
     <the-carousel/>
    <div class="btn-holder">

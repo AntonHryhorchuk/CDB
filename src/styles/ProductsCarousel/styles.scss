@@ -12,8 +12,13 @@
       letter-spacing: 4px;
       margin-bottom: 60px;
   }
+
     .swiper-button-prev {
       margin-right: 50px;
+      cursor: pointer;
+    }
+    .swiper-button-next{
+      cursor: pointer;
     }
     .swiper-button-prev:hover{
       filter: brightness(130%);

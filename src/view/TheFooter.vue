@@ -10,13 +10,13 @@
         <div class="footer__wrapper-social">
           <ul class="footer__wrapper-social-list">
             <li class="footer__wrapper-social-list-item">
-              <a href=""><img src="../assets/Facebook.svg" alt="" /></a>
+              <a href="https://uk-ua.facebook.com/" target="_blank"><img src="../assets/Facebook.svg" alt="" /></a>
             </li>
             <li class="footer__wrapper-social-list-item">
-              <a href=""><img src="../assets/Twitter.svg" alt="" /></a>
+              <a href="https://twitter.com/" target="_blank"><img src="../assets/Twitter.svg" alt="" /></a>
             </li>
             <li class="footer__wrapper-social-list-item">
-              <a href=""><img src="../assets/YouTube.svg" alt="" /></a>
+              <a href="https://www.youtube.com/" target="_blank"><img src="../assets/YouTube.svg" alt="" /></a>
             </li>
           </ul>
         </div>
